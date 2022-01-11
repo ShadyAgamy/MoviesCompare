@@ -1,0 +1,104 @@
+.tutorial {
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+figure.image {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+figure .image img {
+  width: 128px;
+}
+
+.notification {
+  margin-top: 20px !important;
+}
+
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.title .icon {
+  margin-left: 15px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.dropdown-item img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.media {
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.media:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.media:hover {
+  background-color: rgba(0, 0, 0, .1);
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.media + .media {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.input_options {
+  border: 1px solid #00C29E;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.input_options.close {
+  visibility: hidden;
+  height: 0;
+}
+
+figure .image img {
+  width: 100%;height: 100%;object-fit: cover;
+}
+
+.movieTitle {
+ color:  #4A4A4A
+}
+
+
+.movieDetails {
+  margin-top: 4rem;
+}
+
+.generes-list {
+  display: flex;
+  align-items: center;
+  
+}
+
+.generes-list li {
+  margin-left: .5rem;
+  font-size: .7rem;
+  font-weight: bold;
+}
