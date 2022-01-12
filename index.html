@@ -2,24 +2,18 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="hero is-primary is-bold">
+    <section class="hero is-info is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-            Movie Fight
-            <span class="icon">
-              <i class="fas fa-film"></i>
+          <h1 class="title ">
+            Movies Comparison
+            <span>
+              <i class="fas fa-video"></i>
             </span>
           </h1>
         </div>
@@ -29,29 +23,23 @@
       <section class="columns">
         <div class="column left-auto-complete">
           <div class="">
-            <input
-              class="input is-primary"
-              type="text"
-              placeholder="Primary input"
-            />
+            <label class="label">Search A Movie</label>
+            <input class="input is-primary" type="text" placeholder="First Movie" />
           </div>
           <div class="input_options close"></div>
-          <div class=" card"></div>
+          <div class="card"></div>
         </div>
-       
+
         <div class="column right-auto-complete">
           <div class="">
-            <input
-              class="input is-primary"
-              type="text"
-              placeholder="Primary input"
-            />
+            <label class="label">Search A Movie</label>
+            <input class="input is-primary" type="text" placeholder="Second Movie" />
           </div>
-          <div class="input_options close" ></div>
-          <div class=" card"></div>
+          <div class="input_options close"></div>
+          <div class="card"></div>
         </div>
       </section>
-      <div class="column is-half notification is-primary tutorial">
+      <div class="column is-half notification is-info tutorial">
         <h1 class="title">Search for a movie on both sides</h1>
         <p class="subtitle">we will tell you which is best!</p>
       </div>

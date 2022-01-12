@@ -23,12 +23,17 @@ figure .image img {
   overflow-y: scroll;
 }
 
-.title .icon {
+.title span {
   margin-left: 15px;
 }
 
 .hero {
   margin-bottom: 20px;
+}
+
+.hero-body .container, .hero-body .container .title  {
+  display: flex;
+  justify-content: center;
 }
 
 .forms {
@@ -105,7 +110,17 @@ figure .image img {
 }
 
 
-.notification.is-primary {
-  background-color: #00d1b2!important;
-  color: #fff!important;
+.image.is-4by3 {
+  padding-top: 54%;
+}
+
+.container .columns {
+  margin-top: 6rem;
+}
+
+.label {
+  color: #209cee;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
 }
