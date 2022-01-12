@@ -73,7 +73,7 @@ figure .image img {
   margin-top: 5px;
 }
 
-.input_options.close {
+.close {
   visibility: hidden;
   height: 0;
 }
@@ -87,8 +87,9 @@ figure .image img {
 }
 
 
-.movieDetails {
+.card {
   margin-top: 4rem;
+  box-shadow: unset;
 }
 
 .generes-list {
@@ -101,4 +102,10 @@ figure .image img {
   margin-left: .5rem;
   font-size: .7rem;
   font-weight: bold;
+}
+
+
+.notification.is-primary {
+  background-color: #00d1b2!important;
+  color: #fff!important;
 }
