@@ -65,14 +65,14 @@ const getMovie = async (movie, root, side) => {
 };
 
 const runComparison = () => {
+    console.log('run compare')
   const leftSideStats = document.querySelectorAll('.left-auto-complete .notification');
   const rightSideStats = document.querySelectorAll('.right-auto-complete .notification');
 
   leftSideStats.forEach((leftStat, i) => {
     const rightStat = rightSideStats[i];
-    const leftStatValue = leftStat.dataset.value;
-    const rightStatValue = rightStat.dataset.value;
-
+    const leftStatValue = parseFloat(leftStat.dataset.value) ;
+    const rightStatValue = parseFloat(rightStat.dataset.value);
     if (leftStatValue > rightStatValue) {
       leftStat.classList.remove('is-info');
       leftStat.classList.add('is-primary');
@@ -107,12 +107,10 @@ const showMovieDetails = (movie, root) => {
       </figure>
     </div>
     <div class="card-content">
-      <div class="media">
         <div class="media-content">
           <p class="title is-4">${title}</p>
           <p class="subtitle ${'generes' + id} is-6"></p>
         </div>
-      </div>
       <article data-value=${revenue} class="notification is-info">
           <p class="title">${usdCurrencyFormatter.format(parseInt(revenue))}</p>
           <p class="subtitle">revenue</p>

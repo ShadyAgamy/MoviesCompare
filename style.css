@@ -124,3 +124,10 @@ figure .image img {
   font-size: 18px;
   font-weight: 500;
 }
+
+
+.media-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
